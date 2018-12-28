@@ -1,21 +1,31 @@
 <!doctype html>
 <html lang="ko">
-<h1>객체타입</h1>
+<h1>Javascript어디까지</h1>
 <head>
 <script>
-var x= '아아';
-switch (typeof x) {
-  case 'number':
-    document.write('변수 x의 타입은 숫자이다.');
+var day = new Date().getDay();
+
+switch(day){
+  case 1:
+  document.write('월');
+  case 2:
+  case 3:
+  case 4:
+  document.write('목');
+  case 5:
+  document.write('금');
+  case 6:
+  document.write('토');
+  break;
+   default:
+     document.write('일요일');
     break;
 
-  case 'string':
-      document.write('변수 x의 타입은 문자열이다.');
-      break;
-  default:
-    document.write('변수 x의 타입은 모르겠다.');
-    break;
+
+
 }
+
+
 </script>
 <body>
 
