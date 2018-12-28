@@ -3,18 +3,19 @@
 <h1>객체타입</h1>
 <head>
 <script>
-var x=3,y=5;
-if(x==y){
-  document.write('x와 y값이 같습니다.');
-}else if(x>y){
-  document.write('x가 y보다 큽니다.');
-}else{
-  document.write('x보다 y가 큽니다.<br>');
-}
+var x= '아아';
+switch (typeof x) {
+  case 'number':
+    document.write('변수 x의 타입은 숫자이다.');
+    break;
 
-var x=4,y=5;
-var result =(x>y)? 'x가 더 크다':'y가 더크다'
-document.write(result);
+  case 'string':
+      document.write('변수 x의 타입은 문자열이다.');
+      break;
+  default:
+    document.write('변수 x의 타입은 모르겠다.');
+    break;
+}
 </script>
 <body>
 
