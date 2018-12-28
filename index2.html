@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="ko">
+<h1>객체타입</h1>
+<head>
+<script>
+function functionName(color,name,short) {
+    this.color = color;
+    this.name = name;
+    this.short = short;
+}
+
+var aop = new functionName('레드','흰둥이',10);
+  document.write(aop.color,aop.name,aop.short);
+</script>
