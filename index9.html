@@ -1,0 +1,30 @@
+
+<!doctype html>
+<html>
+<head>
+<title>title에 적힌 title</title>
+
+</head>
+
+<body>
+  <p id ="ptag">p태그 내용 바꿔보기</p>
+  <script>
+      var pp = document.getElementById("ptag");
+      pp.innerHTML = "내용 바꿔보자";
+  </script>
+
+  <ul>
+      <li class="odd">li요소중 class odd임</li>
+      <li class="app">li요소중 class app임</li>
+  </ul>
+</body>
+<script>
+        var odd = document.querySelectorAll('li.odd');
+        for(var i=0; i<odd.length; i++){
+          odd.item(i).style.color='blue';
+        }
+
+    var title = document.title; // <title>태그 선택
+    document.write(title);
+</script>
+</html>

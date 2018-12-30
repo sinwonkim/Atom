@@ -13,6 +13,11 @@
     <li>2.리스트</li>
     <li>3.리스트</li>
   </ul>
+  <ul class="odd">
+    <li class="odd">1.리스트</li>
+    <li class="odd">2.리스트</li>
+    <li class="odd">3.리스트</li>
+  <ul>
 </body>
 <script>
   document.getElementById("eventT").onclick =function () {
@@ -21,6 +26,11 @@
   var li = document.getElementsByTagName('li');
   for(var i = 0; i<li.length; i++){
     li.item(i).style.color = 'red';
+  }
+
+  var odd = document.getElementsByClassName("odd");
+  for(var s = 0; s<odd.length; s++){
+    odd.item(s).style.color='blue';
   }
   </script>
 </html>
