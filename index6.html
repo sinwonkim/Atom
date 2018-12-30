@@ -1,33 +1,10 @@
 <script>
-
+//switch 문 사용 했을 떄
 var date = new Date();
 
-switch (date.getDay()) {
-  case 0:
-    day = '일';
-    break;
-  case 1:
-    day = '월';
-    break;
-  case 2:
-   day = '화';
-   break;
-   case 3:
-   day = '수';
-  default:
-  day = '오늘 요일은 목금토 군요?';
-}
-
-document.write(day);
 
 
-
-
-
-
-
-
-
-
-
+// 배열 사용해보기
+var days = ['일','월','화','수','목','금','토'];
+document.write(days[date.getDay()]+" 요일 입니다.");
 </script>
