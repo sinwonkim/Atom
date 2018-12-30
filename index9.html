@@ -17,14 +17,44 @@
       <li class="odd">li요소중 class odd임</li>
       <li class="app">li요소중 class app임</li>
   </ul>
-</body>
-<script>
-        var odd = document.querySelectorAll('li.odd');
-        for(var i=0; i<odd.length; i++){
-          odd.item(i).style.color='blue';
-        }
+  <script>
+          var odd = document.querySelectorAll('li.odd');
+          for(var i=0; i<odd.length; i++){
+            odd.item(i).style.color='blue';
+          }
 
-    var title = document.title; // <title>태그 선택
-    document.write(title);
+      var title = document.title; // <title>태그 선택
+      document.write(title);
+  </script>
+  <h1>속성 이름을 이용한 속성값 변경</h1>
+  <a id="link" href="https://www.naver.com/">네이버링크</a><br>
+  <button onclick="changeLink()">유튜브로 바로가기</button>
+
+  <script>
+  function changeLink() {
+    var Link = document.getElementById("link");
+    Link.href ='https://www.youtube.com/';
+    Link.innerHTML = '유튜브';
+  }
+
+  </script>
+
+  <h1>DOM 요소의 스타일 변경</h1>
+<p id="fontcolor1"> 기본 font color는 black </p>
+<button onclick="textcolor()">글씨 색깔 변경 </button>
+<script>
+function textcolor(){
+   var fontcolor = document.getElementById("fontcolor1");
+   fontcolor.style.color = 'blue';
+}
 </script>
+
+
+
+
+
+
+
+</body>
+
 </html>
