@@ -2,10 +2,11 @@
 
 
 
-var bb=[1,'bd'];
+var bb=[2,'bd'];
 
-function printArr(value,index) {
-  document.write(index+" , "+value);
+function printArr(value,index,array) {
+  console.log(value);
+  document.write("index 값은 : " + index+" value는 "+value+"<br>");
 }
 
 bb.forEach(printArr);
