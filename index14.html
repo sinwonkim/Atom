@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>insertBefore()메소드</title>
+</head>
+<body>
+  <h1>노드 기준점 내용추가</h1>
+  <li id="changetext">요걸 넣을거</li>
+  <ul id="list">
+    <li>1</li>
+    <li id="beforcontent">2</li>
+    <li>3</li>
+  </ul>
+  <button onclick="changeNodeposition()">노드위치변경</button>
+    <script>
+    function changeNodeposition() {
+        var list = document.getElementById('list');
+        var beforcontent1 = document.getElementById('beforcontent');
+        var changetext = document.getElementById('changetext');
+
+        list.insertBefore(changetext,beforcontent1); //해당노드 기준으로 자식노드 바로앞에 추가
+    }
+    </script>
+</body>
+
+</html>

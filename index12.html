@@ -7,17 +7,28 @@
 </head>
 
 <body>
+
   <p id="ptag">Node 접근해서 노드 내용 바꿔보기</p>
   <p id="text1">텍스트</p>
 
-  <script>
-    var textchange = document.getElementById("ptag").firstChild.nodeValue;
-    document.getElementById("text1").firstChild.nodeValue = textchange;
-  </script>
+    <script>
+      var textchange = document.getElementById("ptag").firstChild.nodeValue;
+      document.getElementById("text1").firstChild.nodeValue = textchange;
+    </script>
 
+  <h1>노드 리스트<h1>
+    <ul id="list">
+        <li>1번쨰 리스트</li>
+        <li>2번째 리스트</li>
+        <li>3번째 리스트</li>
+    </ul>
+    <script>
+    var listItems = document.getElementById('list').childNodes;
+    listItems[1].firstChild.nodeValue = '내용 변경';
+    listItems[3].innerHTML = '2번쨰 리스트 내용변경'; //text 노드가 존재해서
+    document.write(listItems[3].nodeValue);
 
-
-
+    </script>
 </body>
 
 </html>

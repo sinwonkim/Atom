@@ -1,0 +1,28 @@
+
+<!doctype html>
+<html>
+<head>
+<title>노드 추가하기</title>
+
+</head>
+
+<body>  <p id="addlist">4<p>
+  <h1>appendChild()메소드</h1>
+  <div id="list">
+      <p>1</p>
+      <p>2</p>
+      <p>3</p>
+  </div>
+
+  <button onclick="addNode()">노드 추가하기</button>
+
+  <script>
+  function addNode() {
+    var list = document.getElementById("list");
+    var addlist   =       document.getElementById("addlist");
+    list.appendChild(addlist);
+  }
+  </script>
+
+
+</html>
