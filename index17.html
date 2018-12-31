@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>insertData()메소드</title>
+</head>
+<body>
+  <h1 id="text">요소 노드의 생성</h1>
+
+<button onclick="createNode()">요소 노드 생성</button>
+<button onclick="">속성 노드 생성</button>
+    <script>
+      function createNode() {
+        var createNo = document.getElementById("text");
+        var cp = document.createElement("p");
+        cp.innerHTML = '내용 추가함';
+        document.body.insertBefore(cp,createNo);
+        var styleattribute= document.createAttribute("style");
+        styleattribute.value = "color:red";
+        cp.setAttribute(styleattribute);
+      }
+
+    </script>
+</body>
+
+</html>

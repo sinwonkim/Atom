@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>insertData()메소드</title>
+</head>
+<body>
+    <h1>insertData()메소드 사용</h1>
+    <p id="first">오늘은 입니다.</p>
+    <button onclick="addmonth()">월 추가</button>
+
+    <script>
+    var date = new Date();
+    function addmonth() {
+      var first = document.getElementById('first').firstChild;
+      first.insertData(3," "+date);
+    }
+    </script>
+</body>
+
+</html>

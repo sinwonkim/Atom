@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>insertData()메소드</title>
+</head>
+<body>
+<p id="textp">텍스트</p>
+<button onclick="changenode()">텍스트 노드의 값 변경</button>
+
+<body>
+<script>
+function changenode(){
+	var textp = document.getElementById("textp");
+	textp.firstChild.nodeValue="data변경 됨";
+}
+</script>
+</body>
+
+</html>
