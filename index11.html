@@ -13,18 +13,22 @@
   <br>
   <textarea id ="output"></textarea>
   <button onclick="textoutput()">출력하기</button>
+  <button onclick="textallouput()">전체입력 내용출력</button>
 
   <script>
   var temp;
-
+  var totaltemp;
   function textClick() {
     var inputvalue = document.getElementById('textcontent').value;
     temp = inputvalue;
+    totaltemp += temp;
     document.getElementById('textcontent').value ='';
   }
   function textoutput(){
     document.getElementById('output').value = temp;
-    temp = '';
+  }
+  function textallouput(){
+    document.getElementById('output').value = totaltemp;
   }
   </script>
 

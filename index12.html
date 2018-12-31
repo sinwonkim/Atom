@@ -1,0 +1,23 @@
+
+<!doctype html>
+<html>
+<head>
+<title>node로의 접근</title>
+
+</head>
+
+<body>
+  <p id="ptag">Node 접근해서 노드 내용 바꿔보기</p>
+  <p id="text1">텍스트</p>
+
+  <script>
+    var textchange = document.getElementById("ptag").firstChild.nodeValue;
+    document.getElementById("text1").firstChild.nodeValue = textchange;
+  </script>
+
+
+
+
+</body>
+
+</html>
