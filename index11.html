@@ -1,0 +1,36 @@
+
+<!doctype html>
+<html>
+<head>
+<title>title에 적힌 title</title>
+
+</head>
+
+<body>
+
+  <input  id="textcontent" type="text" value="">
+  <button onclick="textClick()">버튼저장</button>
+  <br>
+  <textarea id ="output"></textarea>
+  <button onclick="textoutput()">출력하기</button>
+
+  <script>
+  var temp;
+
+  function textClick() {
+    var inputvalue = document.getElementById('textcontent').value;
+    temp = inputvalue;
+    document.getElementById('textcontent').value ='';
+  }
+  function textoutput(){
+    document.getElementById('output').value = temp;
+    temp = '';
+  }
+  </script>
+
+
+
+
+</body>
+
+</html>
