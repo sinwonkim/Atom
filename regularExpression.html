@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+</head>
+<body>
+  <p id="text"></p>
+</body>
+
+  <script>
+      var regStr = /a+bc/;  // 정규표현식 리터럴을 이용한 생성
+      var regObj = new RegExp("a+bc"); //RegExp 객체를 이용한 생성
+      document.getElementById("text").innerHTML = regStr +regObj;
+  </script>
+
+</html>
