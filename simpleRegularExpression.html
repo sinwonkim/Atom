@@ -11,8 +11,8 @@
 
 <script>
   var targetStr = "간장 공장 공장장은 강 공장장이고, 된장 공장 공장장은 장 공장장이다.";
-  var regEx1 = /공장/;
-  var regEx2 = /12/;
+  var regEx1 = /공장/; //3 스페이스바까지 구분함
+  var regEx2 = /12/; // -1 부분 문자열 찾지 못한 경우 -1을 반환함
   document.write(targetStr.search(regEx1)+"<br>");
   document.write(targetStr.search(regEx2));
 

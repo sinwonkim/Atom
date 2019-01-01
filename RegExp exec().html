@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>interval()메소드</title>
+</head>
+<body>
+  <p id="text"></p>
+</body>
+<script>
+var targetStre = "abbascd";
+var fResult = /ab+/.exec(targetStre); // 패턴과 일치하는 문자열 반환 abb
+var sResult = /abb+/.exec(targetStre); //
+document.getElementById("text").innerHTML = fResult+'<br>' + sResult;
+</script>
+</html>
