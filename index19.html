@@ -5,9 +5,21 @@
     <title>insertData()메소드</title>
 </head>
 <body>
-  
+  <h1>window 객체 접두사의 생략</h1>
     <script>
+    document.write(screenY);
     </script>
+  <h2>브라우저 새 창 열기</h2>
+<button onclick="openWindow()">새로운 창 열기</button>
+  <script>
+  var newWindowObj;
+  // 변수 strWindow를 통해 새롭게 여는 웹 브라우저 창의 옵션들을 일일이 설정할 수 있다.
+  var strWindow = "menubar = yes,location = yes, resizable = yes, scrollbars = yes,status = yes";
+  function openWindow() {
+    newWindowObj = window.open("/html/intro","HTML 개요",strWindow);
+  }
+
+  </script>
 </body>
 
 </html>
