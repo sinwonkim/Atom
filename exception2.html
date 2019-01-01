@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>예외처리</title>
+</head>
+<body>
+    <h1>try,catch,finally +  strict 모드로 설정 전체 스크립트</h1>
+    <p id="text"></p>
+
+    <script>
+      "use strict"
+       try{
+       num = 123;
+         } catch(ex) {
+             document.getElementById('text').innerHTML = ex.name+"<br>";
+             document.getElementById('text').innerHTML += ex.mesaage;
+         }
+    </script>
+
+</body>
+
+</html>

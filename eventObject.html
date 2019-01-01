@@ -9,8 +9,8 @@
   <button id="buttonC">눌러 보세요</button>
   <p id="text"></p>
   <script>
-  var buttonC = document.getElementById('buttonC');
-  buttonC.addEventListener("click",clickEvent);
+  var buttonC = document.getElementById('buttonC'); // 아이디가 ""인 요소를 선택함
+  buttonC.addEventListener("click",clickEvent); // 선택한 요소에 click이벤트 리스너를 등록함
 
 function clickEvent() {
   document.getElementById("text").innerHTML="이벤트 타입은 : "+event.type+"이벤트 대상은 : "+event.target;
