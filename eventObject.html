@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>이벤트 객체</title>
+</head>
+<body>
+  <h1>이벤트객체</h1>
+  <button id="buttonC">눌러 보세요</button>
+  <p id="text"></p>
+  <script>
+  var buttonC = document.getElementById('buttonC');
+  buttonC.addEventListener("click",clickEvent);
+
+function clickEvent() {
+  document.getElementById("text").innerHTML="이벤트 타입은 : "+event.type+"이벤트 대상은 : "+event.target;
+}
+  </script>
+
+</body>
+
+</html>
