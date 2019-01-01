@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>insertData()메소드</title>
+    <style>
+      .para {
+            background-color: orange;
+
+      }
+    </style>
+</head>
+<body>
+  <p class="">속성 노드의 값을 변경</p>
+  <button onclick="changeAttribute()">속성 변경</button>
+    <script>
+    var para;
+    function changeAttribute() {
+      document.getElementsByTagName("p")[0].setAttribute("class","para");
+    }
+    </script>
+</body>
+
+</html>
